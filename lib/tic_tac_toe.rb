@@ -16,7 +16,7 @@ class TicTacToe
   def initialize
     @board = Array.new(9, " ")
   end
-  
+
 #HELPERS
 def display_board
   puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
@@ -33,7 +33,7 @@ end
 
 
 def move
-    board[index] = character
+    @board[index] = character
 end
 
 
