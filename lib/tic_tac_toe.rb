@@ -30,19 +30,19 @@ def input_to_index(input)
 end
 
 
-def position_taken?(board, index)
-  if board[index] == " " || board[index] == "" || board[index] == nil
+def position_taken?(@board, index)
+  if @board[index] == " " || @board[index] == "" || @board[index] == nil
     return false
-  elsif board[index] == "X" || board[index] == "O"
+  elsif @board[index] == "X" || @board[index] == "O"
     return true
   end
 end
 
 
-def valid_move?(board, index)
-  if position_taken?(board, index) == false && index.between?(0, 8)
+def valid_move?(@board, index)
+  if position_taken?(@board, index) == false && index.between?(0, 8)
     return true
-  elsif position_taken?(board, index)
+  elsif position_taken?(@board, index)
     return false
   elsif index < 0 || index > 8
     return false
