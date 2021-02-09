@@ -13,11 +13,10 @@ class TicTacToe
   ]
 
 
-def initialize(game)
-  game = TicTacToe.new
-  @board = Array.new(9, " ")
-end
-
+  def initialize
+    @board = Array.new(9, " ")
+  end
+  
 #HELPERS
 def display_board
   puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
