@@ -107,7 +107,7 @@ end
 
 
 def draw?
-  if won?(@board) == false && full?(@board) == true
+  if won? == false && full? == true
     return true
   else
     return false
@@ -116,7 +116,7 @@ end
 
 
 def over?
-  if won?(@board) || full?(@board) || draw?(@board)
+  if won? || full? || draw?
     return true
   else
     return false
